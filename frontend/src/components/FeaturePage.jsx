@@ -1,7 +1,7 @@
 import './FeaturePage.css';
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 function FeaturePage() {
   useEffect(() => {
@@ -41,7 +41,8 @@ const goToSummarizer = () => {
               <p>
                 This feature reads text aloud to assist users with visual impairments or reading difficulties.
               </p>
-              <button className="stt">Try Me</button>
+              <Link to="/text_to_speech">
+              <button className="stt">Try Me</button></Link>
             </div>
             <div className="card-back">
               <p>Supported in multiple languages. Great for visually impaired users.</p>
@@ -56,7 +57,10 @@ const goToSummarizer = () => {
               <p>
                 Get quick summaries of long text. Perfect for users with cognitive disabilities or short attention spans.
               </p>
-              <button className="stt">Try Me</button>
+              <Link to="/summarizer">
+                 <button className="stt">Try Me</button>
+              </Link>
+
             </div>
             <div className="card-back">
               <p>Uses AI to extract key points instantly and clearly.</p>
@@ -71,7 +75,8 @@ const goToSummarizer = () => {
               <p>
                 Ask anything, anytime. Our assistant supports students by answering questions and giving guidance.
               </p>
-              <button className="stt">Try Me</button>
+              <Link to="/ChatBot">
+              <button className="stt">Try Me</button></Link>
             </div>
             <div className="card-back">
               <p>Available 24/7 for doubt clearing, homework help, and more.</p>
@@ -91,7 +96,7 @@ const goToSummarizer = () => {
             </p>
           </div>
           <div className="about-image">
-            <img src="https://images.unsplash.com/photo-1584697964154-e82c3f76b1fa?auto=format&fit=crop&w=800&q=60" alt="About EduCap" />
+            <img src="WhatsApp Image 2025-04-08 at 01.43.53_f5a83dbe.jpg" alt="About EduCap" />
           </div>
         </div>
       </div>
@@ -130,9 +135,9 @@ const goToSummarizer = () => {
         </div>
       </footer>
 
-      <div className="chat-btn" onClick={handleChatOpen}>
+      {/* <div className="chat-btn" onClick={handleChatOpen}>
         💬
-      </div>
+      </div> */}
     </>
   );
 }

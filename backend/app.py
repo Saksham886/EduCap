@@ -16,7 +16,7 @@ from deep_translator import GoogleTranslator
 from reportlab.pdfgen import canvas
 from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
 from werkzeug.security import generate_password_hash, check_password_hash
-
+from vocamate_chatbot import vocamate_bp
 # Load environment variables first
 load_dotenv()
 
@@ -286,7 +286,7 @@ def summarize_text():
 
     except Exception as e:
         return jsonify({"error": f"Summarization error: {str(e)}"}), 500
-
+import traceback
 @app.route("/summarize_url", methods=["POST"])
 def summarize_url():
     """Summarize content from URL"""
@@ -339,7 +339,10 @@ def summarize_url():
         })
 
     except Exception as e:
+    
+        traceback.print_exc()  # 👈 This shows the full traceback in your terminal
         return jsonify({"error": f"Failed to process URL: {str(e)}"}), 500
+
 
 @app.route("/summarize_pdf", methods=["POST"])
 def summarize_pdf():
@@ -576,7 +579,7 @@ def get_user_history():
         })
     except Exception as e:
         return jsonify({"error": f"Database error: {str(e)}"}), 500
-
+app.register_blueprint(vocamate_bp) 
 @app.route("/health", methods=["GET"])
 def health_check():
     """Simple health check endpoint"""

@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import './SummarizerPage.css';
-import { summarizeYoutube } from '../api/summarizeYoutube';
-import { summarizeText } from '../api/summarizeText';
-import { summarizeArticle } from '../api/summarizeArticle';
-import { summarizePdf } from '../api/summarizePdf'; // optional, explained below
+ import { summarizeYoutube } from '../api/summarizeYoutube';
+  import { summarizeText } from '../api/summarize';
+  import { summarizeArticle } from '../api/summarizeArticle';
+  import { summarizePdf } from '../api/summarizePdf'; // optional, explained below
+import Header from './NavBar';
+import Footer from './Footer';
 
 const SummarizerPage = () => {
+  
   const [activeOption, setActiveOption] = useState(null);
   const [input, setInput] = useState('');
   const [file, setFile] = useState(null);
@@ -94,7 +97,9 @@ const SummarizerPage = () => {
   };
 
   return (
+  <><Header/>
     <div className="summarizer-page">
+      
       <h1 className="main-heading">Summarizer</h1>
 
       <div className="summary-options">
@@ -126,6 +131,8 @@ const SummarizerPage = () => {
         )}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

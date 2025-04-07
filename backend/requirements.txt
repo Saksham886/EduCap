@@ -19,3 +19,4 @@ requests==2.31.0
 reportlab==4.1.0
 werkzeug==3.0.1
 gunicorn
+google-generativeai==0.4.0

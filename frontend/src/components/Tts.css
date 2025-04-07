@@ -1,0 +1,241 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url('D:\Gradient week\Backend\frontend\public\BG img.png'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*addded here*/
+    position: relative;
+  }
+  
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45); /* Dark overlay */
+    z-index: -1;
+  }
+
+
+  
+  
+  .uploader-container {
+    background: linear-gradient(145deg, #e8dede, #c7bcbc);
+    padding: 3rem;
+    border-radius: 20px;
+    width: 95%;
+    max-width: 750px;
+    margin: 3rem auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInSlide 1s ease forwards;
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  
+  @keyframes fadeInSlide {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .uploader-container:hover {
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.3);
+  }
+  
+  .uploader-container h2 {
+    text-align: center;
+    color: #2e2e2e;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+    animation: fadeIn 1.4s ease-in;
+  }
+  
+  .uploader-container h2:hover {
+    color: #5c4d7d;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  .text-input {
+    width: 90%;
+    min-height: 150px;
+    resize: vertical;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    border: 1px solid #aaa;
+    margin-bottom: 1.5rem;
+    background-color: #fdfdfd;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    animation: fadeIn 1.2s ease-in;
+
+    margin: 0 auto 1.5rem; 
+    display: block;  
+
+
+    
+      
+  }
+  
+  .text-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(124, 106, 167, 0.4);
+    background-color: #fff;
+  }
+  
+  .file-input {
+    display: block;
+    margin: 0 auto 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    transition: transform 0.4s ease;
+    animation: slideIn 1s ease-in;
+  }
+  
+  .file-input:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .file-name {
+    color: #5a5a5a;
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    animation: fadeIn 1.3s ease-in;
+  }
+  
+  .slider-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+    animation: fadeIn 1.6s ease-in;
+  }
+  
+  .slider-container label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+    min-width: 140px;
+    transition: transform 0.3s ease;
+  }
+  
+  .slider-container label:hover {
+    transform: scale(1.05);
+  }
+  
+  input[type="range"] {
+    accent-color: #5c4d7d;
+    cursor: pointer;
+  }
+  
+  .speak-button {
+    background-color: #5c4d7d;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 8px 18px rgba(92, 77, 125, 0.3);
+    animation: bounceIn 1.8s ease;
+  }
+  
+  .speak-button:hover {
+    background-color: #7b68b0;
+    
+        font-family: 'Raleway', sans-serif;
+      
+      
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(92, 77, 125, 0.4);
+  }
+  
+  .speak-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(92, 77, 125, 0.5);
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: scale(0.95); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+  
+  /* ---------- Responsive Tweaks ---------- */
+  @media (max-width: 768px) {
+    .uploader-container {
+      padding: 2rem;
+      margin: 2rem auto;
+    }
+  
+    .uploader-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-input {
+      min-height: 120px;
+      font-size: 1rem;
+    }
+  
+    .slider-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .speak-button {
+      font-size: 1rem;
+      padding: 0.9rem 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .uploader-container {
+      padding: 1.5rem;
+      border-radius: 12px;
+    }
+  
+    .uploader-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .text-input {
+      min-height: 100px;
+      font-size: 0.95rem;
+    }
+  
+    .speak-button {
+      font-size: 0.95rem;
+      padding: 0.8rem 1rem;
+    }
+  }
+  
+
+  

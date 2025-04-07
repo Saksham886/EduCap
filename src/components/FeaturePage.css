@@ -1,0 +1,486 @@
+/* :root {
+    --bg-color: #dad1d1;
+    
+    
+    --card-bg: #ffffff;
+    --border-color: #ccc;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --button-bg: #658bb6;
+    --button-hover-bg: #2b69a0;
+    --button-text: #fff;
+  }
+
+  
+  
+  .features-page {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: #1A1A1A;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .page-title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #1A1A1A;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 1rem 0;
+  }
+  
+  .feature-card {
+    background-color: var(--card-bg);
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--card-shadow);
+    font-size: 1.1rem;
+    font-weight: normal;
+    border: 1px solid var(--border-color);
+    width: 275px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  
+  .card-header h2 {
+    font-size: 2rem;
+    color: rgb(56, 66, 71);
+    margin-bottom: 1.5rem;
+    transition: font-size 0.3s ease;
+  }
+  
+
+  .feature-card:hover h2 {
+    font-size: 2.4rem;
+  }
+  
+  
+  .stt {
+    margin-top: 1rem;
+    border-radius: 0.35rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--card-shadow);
+    border-color: var(--accent-color);
+  }
+  
+  .feature-card:hover .stt {
+    transform: scale(1.1);
+    background-color: rgb(122, 162, 226);
+  }
+  
+  .about1 {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-us {
+    padding: 4rem 2rem;
+    background-color: #dad1d1;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 2.5rem;
+    color: #303335;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info {
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+    min-width: 280px;
+  }
+  
+  .contact-info p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact-form {
+    border-radius: 3%;
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #c7bebe;
+    height: 300px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    background-color: #658bb6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #357abd;
+  } */
+  
+  :root {
+    --bg-color: #dad1d1;
+    --card-bg: #ffffff;
+    --border-color: #ccc;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --button-bg: #658bb6;
+    --button-hover-bg: #2b69a0;
+    --button-text: #fff;
+  }
+  
+  .features-page {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: #1A1A1A;
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background-color: var(--card-bg);
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--card-shadow);
+    font-size: 1.1rem;
+    width: 275px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-header h2 {
+    
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(56, 66, 71);
+  }
+  
+  .feature-card:hover h2 {
+    font-size: 2.3rem;
+  }
+  
+  .stt {
+    margin-top: 1rem;
+    border-radius: 0.35rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card:hover .stt {
+    transform: scale(1.1);
+    background-color: rgb(122, 162, 226);
+  }
+  
+  /* About Section */
+  .about1 {
+    background-color: #f9f9f9;
+    padding: 4rem 2rem;
+    color: #333;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .about-text, .about-image {
+    flex: 1 1 300px;
+  }
+  
+  .about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+  }
+  
+  /* Contact Section */
+  .contact-us {
+    padding: 4rem 2rem;
+    background-color: #dad1d1;
+    text-align: center;
+  }
+  
+  .contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container-us p{
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .contact-info, .contact-form {
+    flex: 1 1 300px;
+    text-align: left;
+  }
+  
+  .contact-info p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .contact-form {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #c7bebe;
+    padding: 1.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-form button {
+    padding: 0.75rem;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  /* ---------- Responsive Breakpoints ---------- */
+  @media (max-width: 1024px) {
+    .features-page {
+      padding: 2rem 1rem;
+    }
+  
+    .page-title {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+      justify-content: center;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image img {
+      max-width: 90%;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-form {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feature-card {
+      width: 100%;
+    }
+  
+    .contact-form,
+    .contact-info {
+      padding: 1rem 0;
+    }
+  
+    .contact-us h2,
+    .about-text h2 {
+      font-size: 1.8rem;
+    }
+  }
+  .footer {
+    background-color: #0e0e0e;
+    color: #fff;
+    padding: 2rem 3rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+  }
+  
+  .footer h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  

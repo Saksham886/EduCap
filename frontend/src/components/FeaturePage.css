@@ -1,217 +1,5 @@
-/* :root {
-    --bg-color: #dad1d1;
-    
-    
-    --card-bg: #ffffff;
-    --border-color: #ccc;
-    --card-shadow: rgba(0, 0, 0, 0.1);
-    --button-bg: #658bb6;
-    --button-hover-bg: #2b69a0;
-    --button-text: #fff;
-  }
 
-  
-  
-  .features-page {
-    min-height: 100vh;
-    background-color: var(--bg-color);
-    color: #1A1A1A;
-    font-family: Arial, sans-serif;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-  
-  .page-title {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    color: #1A1A1A;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 2rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 1rem 0;
-  }
-  
-  .feature-card {
-    background-color: var(--card-bg);
-    padding: 2.5rem 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px var(--card-shadow);
-    font-size: 1.1rem;
-    font-weight: normal;
-    border: 1px solid var(--border-color);
-    width: 275px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  
-  .card-header h2 {
-    font-size: 2rem;
-    color: rgb(56, 66, 71);
-    margin-bottom: 1.5rem;
-    transition: font-size 0.3s ease;
-  }
-  
-
-  .feature-card:hover h2 {
-    font-size: 2.4rem;
-  }
-  
-  
-  .stt {
-    margin-top: 1rem;
-    border-radius: 0.35rem;
-    height: 2rem;
-    font-size: 1rem;
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  
-  .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px var(--card-shadow);
-    border-color: var(--accent-color);
-  }
-  
-  .feature-card:hover .stt {
-    transform: scale(1.1);
-    background-color: rgb(122, 162, 226);
-  }
-  
-  .about1 {
-    background-color: #f9f9f9;
-    padding: 4rem 2rem;
-    color: #333;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .about-content {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    align-items: center;
-    gap: 3rem;
-    flex-wrap: wrap;
-  }
-  
-  .about-text {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .about-text h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: var(--accent-color);
-  }
-  
-  .about-text p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .about-image {
-    flex: 1;
-    min-width: 300px;
-    text-align: center;
-  }
-  
-  .about-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .contact-us {
-    padding: 4rem 2rem;
-    background-color: #dad1d1;
-    text-align: center;
-  }
-  
-  .contact-us h2 {
-    font-size: 2.5rem;
-    color: #303335;
-    margin-bottom: 2rem;
-  }
-  
-  .contact-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  
-  .contact-info {
-    flex: 1;
-    text-align: left;
-    padding: 1rem;
-    min-width: 280px;
-  }
-  
-  .contact-info p {
-    margin: 1rem 0;
-    font-size: 1.1rem;
-  }
-  
-  .contact-form {
-    border-radius: 3%;
-    flex: 1;
-    min-width: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #c7bebe;
-    height: 300px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .contact-form button {
-    padding: 0.75rem;
-    background-color: #658bb6;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: #357abd;
-  } */
-  
-  :root {
+:root {
     --bg-color: #dad1d1;
     --card-bg: #ffffff;
     --border-color: #ccc;
@@ -236,6 +24,7 @@
   .page-title {
     font-size: 3rem;
     text-align: center;
+    margin-top: 5rem;
     margin-bottom: 2rem;
     
   }
@@ -282,14 +71,27 @@
     transition: transform 0.3s ease;
   }
   
+  .feature-card {
+    transition: 
+      transform 0.4s ease,
+      box-shadow 0.4s ease;
+  }
+  
   .feature-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05) rotateZ(-1deg);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-card:hover h2 {
+    font-size: 2.3rem;
   }
   
   .feature-card:hover .stt {
     transform: scale(1.1);
     background-color: rgb(122, 162, 226);
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
+  
   
   /* About Section */
   .about1 {
@@ -298,6 +100,7 @@
     color: #333;
     display: flex;
     justify-content: center;
+   
   }
   
   .about-content {
@@ -317,6 +120,7 @@
     font-size: 2.2rem;
     margin-bottom: 1rem;
     font-family: 'Poppins', sans-serif;
+    margin-top: 4rem;
   }
   
   .about-text p {

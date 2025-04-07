@@ -48,7 +48,7 @@
   }
   
   .main {
-    background-image: url('D:\CODING\Web dev\Hackathon\frontend\public\image.png'); /* replace with your image */
+    background-image: url('D:\CODING\Web dev\Hackathon\frontend\frontend\public\image.png'); /* replace with your image */
     background-size: cover;
     background-position: center;
     height: 90vh;

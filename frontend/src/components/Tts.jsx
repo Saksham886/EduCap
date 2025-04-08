@@ -43,21 +43,21 @@ const FileUploader = () => {
 
       <textarea
         className="text-input"
-        placeholder="Enter your text or upload a file..."
+        placeholder="Enter your text "
         value={text}
         onChange={handleTextChange}
       />
 
-      <label htmlFor="file-upload" className="file-upload-label">
+      {/* <label htmlFor="file-upload" className="file-upload-label">
         <input
           id="file-upload"
           type="file"
           onChange={handleFileChange}
           className="file-input"
         />
-      </label>
+      </label> */}
 
-      {fileName && <p className="file-name">📄 Upload File : {fileName}</p>}
+      {/* {fileName && <p className="file-name">📄 Upload File : {fileName}</p>} */}
 
       <div className="slider-container">
       <label>

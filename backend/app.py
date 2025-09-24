@@ -34,7 +34,7 @@ app.config["JWT_ACCESS_TOKEN_EXPIRES"] = datetime.timedelta(hours=24)
 jwt = JWTManager(app)
 
 # MongoDB Setup
-mongo_uri = os.getenv("MONGO_URI")
+mongo_uri = os.getenv("Local_mongo")
 db_name = os.getenv("DB_NAME", "education_db")
 
 try:
@@ -593,3 +593,4 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", 5000))
     debug = os.getenv("FLASK_ENV") == "development"
     app.run(host="0.0.0.0", port=port, debug=debug)
+    
